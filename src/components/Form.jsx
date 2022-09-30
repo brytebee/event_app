@@ -38,7 +38,6 @@ const Form = () => {
               name="hostName"
               className="form-control"
               autoComplete="off"
-              required
             />
           </label>
         </div>
@@ -63,6 +62,7 @@ const Form = () => {
               onChange={(date) => setEndDate(date)}
               showTimeSelect
               dateFormat="Pp"
+              required
             />
           </label>
         </div>
@@ -70,10 +70,11 @@ const Form = () => {
           <label htmlFor="hostName" className="form-label">
             <span>Location</span>
             <select
-              name="role"
-              id="role"
+              name="location"
+              id="location"
               value={select}
               onChange={(e) => setSelect(e.target.value)}
+              required
             >
               <option defaultValue="">Select...</option>
               <option value="London">London</option>
@@ -92,10 +93,8 @@ const Form = () => {
             id="file"
             onChange={(e) => setImage(e.target.files[0])}
           />
-          <button type="button" className="upload-btn">
-            Upload Image
-          </button>
         </div>
+        <button type="submit">Next</button>
       </form>
     </div>
   );
