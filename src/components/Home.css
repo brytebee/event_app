@@ -1,0 +1,45 @@
+.landing {
+  text-align: center;
+}
+
+.top {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 8% 0 4% 0;
+  padding: 0;
+
+  color: #240d57;
+}
+
+.top-p {
+  color: #4f4f4f;
+}
+
+.sc {
+  background: linear-gradient(90deg, #8456ec 24.2%, #e87bf8 120.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.top-txt,
+.b-text {
+  margin: 0;
+}
+
+.landing-img {
+  width: 55%;
+}
+
+.land-btn {
+  padding: 16px;
+  width: 55%;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
