@@ -57,6 +57,8 @@ const Form = () => {
               type="text"
               placeholder="Host Name"
               id="hostName"
+              value={hName}
+              onChange={(e) => setHName(e.target.value)}
               name="hostName"
               className="form-control"
               autoComplete="off"
