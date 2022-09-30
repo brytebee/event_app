@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { NavLink } from "react-router-dom";
 
 const Form = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -94,7 +95,9 @@ const Form = () => {
             onChange={(e) => setImage(e.target.files[0])}
           />
         </div>
-        <button type="submit">Next</button>
+        <NavLink to="/event">
+          <button type="submit">Next</button>
+        </NavLink>
       </form>
     </div>
   );

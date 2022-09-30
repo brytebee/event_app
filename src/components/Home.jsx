@@ -1,22 +1,26 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import landing from "../assets/landing.svg";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="landing">
       <section>
-        <p>Imagine if</p>
-        <p>Snapchat</p>
-        <p>had events.</p>
+        <div className="top">
+          <p className="top-txt">Imagine if</p>
+          <p className="sc">Snapchat</p>
+          <p className="b-text">had events.</p>
+        </div>
         <div>
-          <p>
+          <p className="top-p">
             Easily host and share events with your friends across any social
             media.
           </p>
         </div>
       </section>
-      <img src={landing} alt="Lannding page" />
+      <img className="landing-img" src={landing} alt="Lannding page" />
+      <br />
       <NavLink to="/create">
         <button type="button">Create my event</button>
       </NavLink>
