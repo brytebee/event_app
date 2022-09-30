@@ -21,7 +21,9 @@ const Form = () => {
       locate,
       image,
     };
-    console.log(formData);
+    localStorage.setItem("formData", JSON.stringify(formData));
+    window.history.pushState({}, "", "/event");
+    window.location.reload();
   };
 
   return (
@@ -58,6 +60,7 @@ const Form = () => {
               name="hostName"
               className="form-control"
               autoComplete="off"
+              required
             />
           </label>
         </div>
