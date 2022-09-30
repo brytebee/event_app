@@ -22,7 +22,9 @@ const Home = () => {
       <img className="landing-img" src={landing} alt="Lannding page" />
       <br />
       <NavLink to="/create">
-        <button type="button">Create my event</button>
+        <button type="button" className="land-btn">
+          🎉 Create my event
+        </button>
       </NavLink>
     </div>
   );
